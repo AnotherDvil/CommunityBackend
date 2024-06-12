@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="servicios_view_form" model="ir.ui.view">
+        <field name="name">servicios.view.form</field>
+        <field name="model">services</field>
+        <field name="arch" type="xml">
+            <form string="Servicios">
+                <sheet>
+                    <div class="o_employee_avatar">
+                        <field name="image" widget="image" class="oe_avatar m-0" options="{&quot;zoom&quot;: true, &quot;preview_image&quot;:&quot;avatar_128&quot;}"/>
+                    </div>
+                    <div class="oe_title">
+                        <h1 class="d-flex flex-row">
+                            <field name="name" placeholder="Nombre del negocio" required="True" style="font-size: min(4vw, 2.6rem);"/>
+                        </h1>
+                        <h2>
+                            <field name="owner" placeholder="Dueño"/>
+                        </h2>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="direction"/>
+                            <field name="email"/>
+                            <field name="number_phone"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="services_view_tree" model="ir.ui.view">
+        <field name="name">services.view.tree</field>
+        <field name="model">services</field>
+        <field name="arch" type="xml">
+            <tree string="Servicios">
+                <field name="name" />
+                <field name="direction"/>
+                <field name="email"/>
+                <field name="number_phone"/>
+            </tree>
+        </field>
+    </record>
+
+</odoo>

@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    <!-- Acción que mostrará el menu de los servicios -->
+    <record model="ir.actions.act_window" id="community.action_services">
+      <field name="name">Servicios</field>
+      <field name="res_model">services</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- actions -->
+    <menuitem id="community_menu" name="Community" sequence="1"/>
+    <menuitem name="Servicios" id="community_services" parent="community_menu" action="community.action_services" sequence="1"/>
+
+  </data>
+</odoo>
