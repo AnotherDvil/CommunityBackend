@@ -8,4 +8,4 @@ class news(models.Model):
     
     name = fields.Char('Nombre')
     description = fields.Char('Descripción')
-    service_id = fields.Many2one(comodel_name='services', string="Servicio")
+    service_id = fields.Many2one('services', string="Servicio")

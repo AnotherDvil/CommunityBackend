@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 services_community,services_community,model_services,community_group_user,1,1,1,1
+news_community,news_community,model_news,community_group_user,1,1,1,1

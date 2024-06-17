@@ -21,12 +21,15 @@
     'author': "Nexus Technologies",
     'category': 'RH',
     'version': '0.1',
-    'depends': ['base'],
+    'depends': [
+        'base',
+        'hr'
+    ],
     # always loaded
     'data': [
+        'security/ir.model.access.csv',
+        'security/community_security.xml',
         'views/menu_view.xml',
         'views/view_services.xml',
-        'security/community_security.xml',
-        'security/ir.model.access.csv'
     ]
 }
