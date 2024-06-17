@@ -12,3 +12,4 @@ class services(models.Model):
     direction = fields.Char('Dirección')
     number_phone = fields.Char('Teléfono')
     email = fields.Char('Correo electrónico')
+    novedades = fields.One2many(comodel_name='news', inverse_name='service_id', string="Novedades")

@@ -20,11 +20,17 @@
                     </div>
                     <group>
                         <group>
+                            <field name="id" />
                             <field name="direction"/>
                             <field name="email"/>
                             <field name="number_phone"/>
                         </group>
                     </group>
+                    <notebook>
+                        <page name="novedades" string="Novedades">
+                            
+                        </page>
+                    </notebook>
                 </sheet>
             </form>
         </field>
@@ -35,6 +41,7 @@
         <field name="model">services</field>
         <field name="arch" type="xml">
             <tree string="Servicios">
+                <field name="id" />
                 <field name="name" />
                 <field name="direction"/>
                 <field name="email"/>
