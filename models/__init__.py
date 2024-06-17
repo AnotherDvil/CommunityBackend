@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-from . import services, news
+from . import services, news, rewards

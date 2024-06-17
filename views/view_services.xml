@@ -59,7 +59,11 @@
                             <field name="id" />
                             <field name="direction"/>
                             <field name="email"/>
+                        </group>
+                        <group>
                             <field name="number_phone"/>
+                            <field name="bank_account_id" />
+                            <field name="archived" />
                         </group>
                     </group>
                     <notebook>
@@ -86,7 +90,26 @@
                         </page>
 
                         <page string="Recompensas">
-                            
+                            <field name="rewards">
+                                <tree editable="bottom">
+                                    <field name="name" />
+                                    <field name="description" />
+                                    <field name="points_required" />
+                                </tree>
+                            </field>
+                        </page>
+
+                        <page string="Reseñas">
+
+                        </page>
+
+                        <page string="Seguidores">
+                            <field name="followers">
+                                <tree editable="bottom">
+                                    <field name="name" string="Nombre del seguidor" />
+                                    <field name="work_email" string="Correo del seguidor"/>
+                                </tree>
+                            </field>
                         </page>
                     </notebook>
                 </sheet>
