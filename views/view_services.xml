@@ -102,9 +102,11 @@
                         <page string="Reseñas">
                             <field name="reviews">
                                 <tree editable="bottom">
+                                    <field name="create_date" />
                                     <field name="name"/>
                                     <field name="description"/>
-                                    <field name="rating"/>
+                                    <field name="rating" widget="priority"/>
+                                    <field name="written_by" />
                                 </tree>
                             </field>
                         </page>
@@ -119,6 +121,11 @@
                         </page>
                     </notebook>
                 </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
             </form>
         </field>
     </record>

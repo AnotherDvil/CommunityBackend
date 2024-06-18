@@ -23,7 +23,8 @@
     'version': '0.1',
     'depends': [
         'base',
-        'hr'
+        'hr',
+        'mail'
     ],
     # always loaded
     'data': [
