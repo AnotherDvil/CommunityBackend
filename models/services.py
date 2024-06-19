@@ -29,3 +29,4 @@ class services(models.Model):
     rewards = fields.One2many('rewards', 'service_id', string="Recompensas")
     followers = fields.Many2many('hr.employee', 'service_id_f', string="Seguidores")
     reviews = fields.One2many('reviews', 'service_id', string='Reseñas')
+    proposals = fields.One2many('proposals', 'service_id', string="Propuestas")

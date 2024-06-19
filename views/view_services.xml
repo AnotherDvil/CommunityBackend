@@ -86,7 +86,17 @@
                         </page>
 
                         <page string="Propuestas">
-                            
+                            <field name="proposals">
+                                <tree editable="bottom">
+                                    <field name="name" />
+                                    <field name="description" />
+                                    <field name="written_by" />
+                                    <field name="create_date" string="Fecha de creación"/>
+                                    <field name="close_date" />
+                                    <field name="__last_update" string="Ultima modificación"/>
+                                    <field name="status" widget="badge" decoration-warning="status == 'draft'" decoration-success="status == 'complete'"/>
+                                </tree>
+                            </field>
                         </page>
 
                         <page string="Recompensas">

@@ -3,3 +3,4 @@ services_community,services_community,model_services,community_group_user,1,1,1,
 news_community,news_community,model_news,community_group_user,1,1,1,1
 rewards_community,rewards_community,model_rewards,community_group_user,1,1,1,1
 reviews_commmunity,reviews_commmunity,model_reviews,community_group_user,1,1,1,1
+proposals_community,proposals_community,model_proposals,community_group_user,1,1,1,1
